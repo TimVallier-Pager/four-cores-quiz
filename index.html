@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Four Cores of Credibility Personal Assessment</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #f6f9fc, #e9eff5);
+      color: #333;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #007acc;
+    }
+    p.description, .blurb {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .blurb ul {
+      list-style-type: none;
+      padding: 0;
+      font-style: normal;
+    }
+    .blurb li {
+      margin: 5px 0;
+    }
+    /* Quiz Form Styles */
+    form {
+      margin-bottom: 30px;
+    }
+    section.part {
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 2px solid #e0e6ed;
+      border-radius: 8px;
+      background-color: #f9fbfd;
+    }
+    .question {
+      margin-bottom: 25px;
+    }
+    .question-text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .question-text span {
+      flex: 1;
+      min-width: 250px;
+      padding: 5px;
+    }
+    .question-text .left {
+      color: #d9534f;
+    }
+    .question-text .right {
+      color: #5cb85c;
+      text-align: right;
+    }
+    .options {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5px;
+    }
+    .options label {
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: background 0.3s, border-color 0.3s;
+    }
+    .options input[type="radio"] {
+      margin-right: 5px;
+    }
+    .options label:hover {
+      background: #f0f0f0;
+      border-color: #007acc;
+    }
+    /* Button & Results */
+    button#calculateBtn {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      font-size: 1.1rem;
+      background: #007acc;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button#calculateBtn:hover {
+      background: #005fa3;
+    }
+    #results {
+      text-align: center;
+      padding: 20px;
+      background: #e9eff5;
+      border-radius: 8px;
+      border: 1px solid #d0dce5;
+    }
+    #results h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The Four Cores of Credibility Personal Assessment</h1>
+    <p class="description">From The Speed of Trust by Stephen M. R. Covey</p>
+    
+    <!-- Blurb about the four cores -->
+    <div class="blurb">
+      <p><strong>The Four Cores of Credibility:</strong></p>
+      <ul>
+        <li><strong>Integrity:</strong> Consistently aligning your actions with your values and promises.</li>
+        <li><strong>Intent:</strong> Demonstrating genuine motives that prioritize mutual benefit.</li>
+        <li><strong>Capabilities:</strong> Possessing the necessary skills and expertise to deliver.</li>
+        <li><strong>Results:</strong> A proven track record of achieving outcomes.</li>
+      </ul>
+      <p>These elements collectively build trust quickly, especially crucial in leadership and team environments.</p>
+    </div>
+    
+    <form id="quizForm">
+      
+      <!-- PART ONE (Integrity) -->
+      <section class="part" id="part1">
+        <h2>Part One - Integrity</h2>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I sometimes justify telling “white lies,” misrepresent people or situations, or “spin” the truth to get the results I want.</span>
+            <span class="right">At every level, I am thoroughly honest in my interactions with others.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p1q1" value="1">1</label>
+            <label><input type="radio" name="p1q1" value="2">2</label>
+            <label><input type="radio" name="p1q1" value="3">3</label>
+            <label><input type="radio" name="p1q1" value="4">4</label>
+            <label><input type="radio" name="p1q1" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">At times, there’s a mismatch between what I think and what I say, or between my actions and my values.</span>
+            <span class="right">What I say and do is what I really think and feel; I consistently “walk” my “talk.”</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p1q2" value="1">1</label>
+            <label><input type="radio" name="p1q2" value="2">2</label>
+            <label><input type="radio" name="p1q2" value="3">3</label>
+            <label><input type="radio" name="p1q2" value="4">4</label>
+            <label><input type="radio" name="p1q2" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I am not fully clear on my values. It’s difficult for me to stand up for something when others disagree.</span>
+            <span class="right">I am clear on my values and courageous in standing up for them.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p1q3" value="1">1</label>
+            <label><input type="radio" name="p1q3" value="2">2</label>
+            <label><input type="radio" name="p1q3" value="3">3</label>
+            <label><input type="radio" name="p1q3" value="4">4</label>
+            <label><input type="radio" name="p1q3" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">It’s hard for me to acknowledge that someone else may be right, or that there is additional information out there that may cause me to change my mind.</span>
+            <span class="right">I am genuinely open to the possibility of learning new ideas that may cause me to rethink issues or even redefine values.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p1q4" value="1">1</label>
+            <label><input type="radio" name="p1q4" value="2">2</label>
+            <label><input type="radio" name="p1q4" value="3">3</label>
+            <label><input type="radio" name="p1q4" value="4">4</label>
+            <label><input type="radio" name="p1q4" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I have a difficult time setting or achieving personal goals or commitments.</span>
+            <span class="right">I am able to consistently make and keep commitments to myself and others.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p1q5" value="1">1</label>
+            <label><input type="radio" name="p1q5" value="2">2</label>
+            <label><input type="radio" name="p1q5" value="3">3</label>
+            <label><input type="radio" name="p1q5" value="4">4</label>
+            <label><input type="radio" name="p1q5" value="5">5</label>
+          </div>
+        </div>
+      </section>
+      
+      <!-- PART TWO (Intent) -->
+      <section class="part" id="part2">
+        <h2>Part Two - Intent</h2>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I don’t really care that much about people, except those closest to me. It’s hard for me to think about concerns outside of my own challenges in life.</span>
+            <span class="right">I genuinely care about other people and am deeply concerned about the well-being of others.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p2q1" value="1">1</label>
+            <label><input type="radio" name="p2q1" value="2">2</label>
+            <label><input type="radio" name="p2q1" value="3">3</label>
+            <label><input type="radio" name="p2q1" value="4">4</label>
+            <label><input type="radio" name="p2q1" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I don’t think a lot about why I do what I do. I’ve rarely (if ever) tried to do deep interior work to improve my motives.</span>
+            <span class="right">I am consciously aware of my motives and I refine them to make sure that I’m doing the right things for the right reasons.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p2q2" value="1">1</label>
+            <label><input type="radio" name="p2q2" value="2">2</label>
+            <label><input type="radio" name="p2q2" value="3">3</label>
+            <label><input type="radio" name="p2q2" value="4">4</label>
+            <label><input type="radio" name="p2q2" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">In my dealings with others, I usually focus on getting what I want.</span>
+            <span class="right">I actively seek solutions that provide a “win” for everyone involved.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p2q3" value="1">1</label>
+            <label><input type="radio" name="p2q3" value="2">2</label>
+            <label><input type="radio" name="p2q3" value="3">3</label>
+            <label><input type="radio" name="p2q3" value="4">4</label>
+            <label><input type="radio" name="p2q3" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">Based on my own behavior, most people wouldn’t necessarily think I had their best interests in mind.</span>
+            <span class="right">Other people can clearly tell by the things that I do that I really do have their best interests in mind.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p2q4" value="1">1</label>
+            <label><input type="radio" name="p2q4" value="2">2</label>
+            <label><input type="radio" name="p2q4" value="3">3</label>
+            <label><input type="radio" name="p2q4" value="4">4</label>
+            <label><input type="radio" name="p2q4" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">Deep down, I believe that if someone else gets something (resources, opportunities, credit), that means I don’t.</span>
+            <span class="right">I sincerely believe that there is more than enough of everything to go around.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p2q5" value="1">1</label>
+            <label><input type="radio" name="p2q5" value="2">2</label>
+            <label><input type="radio" name="p2q5" value="3">3</label>
+            <label><input type="radio" name="p2q5" value="4">4</label>
+            <label><input type="radio" name="p2q5" value="5">5</label>
+          </div>
+        </div>
+      </section>
+      
+      <!-- PART THREE (Capabilities) -->
+      <section class="part" id="part3">
+        <h2>Part Three - Capabilities</h2>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I feel like I’m not really utilizing my talents in my current job.</span>
+            <span class="right">There is a high match between my talents and my opportunities in the work I’m doing.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p3q1" value="1">1</label>
+            <label><input type="radio" name="p3q1" value="2">2</label>
+            <label><input type="radio" name="p3q1" value="3">3</label>
+            <label><input type="radio" name="p3q1" value="4">4</label>
+            <label><input type="radio" name="p3q1" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I have not gained the knowledge or fully developed the skills I need to really be effective at work.</span>
+            <span class="right">I have acquired the knowledge and mastered the skills required to do my job.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p3q2" value="1">1</label>
+            <label><input type="radio" name="p3q2" value="2">2</label>
+            <label><input type="radio" name="p3q2" value="3">3</label>
+            <label><input type="radio" name="p3q2" value="4">4</label>
+            <label><input type="radio" name="p3q2" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I seldom take time to improve my knowledge and skills at work or in any other area of my life.</span>
+            <span class="right">I relentlessly upgrade and increase my knowledge and skills in all the important areas of my life.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p3q3" value="1">1</label>
+            <label><input type="radio" name="p3q3" value="2">2</label>
+            <label><input type="radio" name="p3q3" value="3">3</label>
+            <label><input type="radio" name="p3q3" value="4">4</label>
+            <label><input type="radio" name="p3q3" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I’m not really sure what my strengths are; I’m more focused on trying to improve in my areas of weakness.</span>
+            <span class="right">I’ve identified my strengths, and my greatest focus is on using them effectively.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p3q4" value="1">1</label>
+            <label><input type="radio" name="p3q4" value="2">2</label>
+            <label><input type="radio" name="p3q4" value="3">3</label>
+            <label><input type="radio" name="p3q4" value="4">4</label>
+            <label><input type="radio" name="p3q4" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">At this point, I really don’t know much about how to build trust.</span>
+            <span class="right">I know how to effectively establish, grow, extend, and restore trust, and I consciously work to make it happen.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p3q5" value="1">1</label>
+            <label><input type="radio" name="p3q5" value="2">2</label>
+            <label><input type="radio" name="p3q5" value="3">3</label>
+            <label><input type="radio" name="p3q5" value="4">4</label>
+            <label><input type="radio" name="p3q5" value="5">5</label>
+          </div>
+        </div>
+      </section>
+      
+      <!-- PART FOUR (Results) -->
+      <section class="part" id="part4">
+        <h2>Part Four - Results</h2>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I don’t have a very good track record. My résumé certainly won’t knock anyone’s socks off.</span>
+            <span class="right">My track record clearly gives others the confidence that I will achieve desired results.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p4q1" value="1">1</label>
+            <label><input type="radio" name="p4q1" value="2">2</label>
+            <label><input type="radio" name="p4q1" value="3">3</label>
+            <label><input type="radio" name="p4q1" value="4">4</label>
+            <label><input type="radio" name="p4q1" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I focus my efforts on doing what I’ve been told to do.</span>
+            <span class="right">I focus my efforts on delivering results not activities.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p4q2" value="1">1</label>
+            <label><input type="radio" name="p4q2" value="2">2</label>
+            <label><input type="radio" name="p4q2" value="3">3</label>
+            <label><input type="radio" name="p4q2" value="4">4</label>
+            <label><input type="radio" name="p4q2" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">When it comes to communicating my track record, either I don’t say anything (I don’t want to come across as bragging), or I say too much and turn people off.</span>
+            <span class="right">I appropriately communicate my track record to others in a way that inspires confidence.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p4q3" value="1">1</label>
+            <label><input type="radio" name="p4q3" value="2">2</label>
+            <label><input type="radio" name="p4q3" value="3">3</label>
+            <label><input type="radio" name="p4q3" value="4">4</label>
+            <label><input type="radio" name="p4q3" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I often fail to finish what I start.</span>
+            <span class="right">With rare exception, if I start something, I finish it.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p4q4" value="1">1</label>
+            <label><input type="radio" name="p4q4" value="2">2</label>
+            <label><input type="radio" name="p4q4" value="3">3</label>
+            <label><input type="radio" name="p4q4" value="4">4</label>
+            <label><input type="radio" name="p4q4" value="5">5</label>
+          </div>
+        </div>
+        <div class="question">
+          <p class="question-text">
+            <span class="left">I don’t worry as much about how I get results – just that I get them.</span>
+            <span class="right">I consistently get results in ways that inspire trust.</span>
+          </p>
+          <div class="options">
+            <label><input type="radio" name="p4q5" value="1">1</label>
+            <label><input type="radio" name="p4q5" value="2">2</label>
+            <label><input type="radio" name="p4q5" value="3">3</label>
+            <label><input type="radio" name="p4q5" value="4">4</label>
+            <label><input type="radio" name="p4q5" value="5">5</label>
+          </div>
+        </div>
+      </section>
+      
+      <button type="button" id="calculateBtn">Calculate Score</button>
+    </form>
+    
+    <div id="results">
+      <h2>Results</h2>
+      <p id="part1Score">Integrity Score: </p>
+      <p id="part2Score">Intent Score: </p>
+      <p id="part3Score">Capabilities Score: </p>
+      <p id="part4Score">Results Score: </p>
+      <p id="totalScore">Total Score: </p>
+    </div>
+  </div>
+  
+  <script>
+    document.getElementById("calculateBtn").addEventListener("click", function(){
+      let totalScore = 0;
+      let partScores = { part1: 0, part2: 0, part3: 0, part4: 0 };
+
+      function sumPart(part, numQuestions) {
+        let sum = 0;
+        for(let i = 1; i <= numQuestions; i++){
+          let radioName = part + "q" + i;
+          let radios = document.getElementsByName(radioName);
+          let selected = Array.from(radios).find(r => r.checked);
+          if(selected){
+            sum += parseInt(selected.value);
+          }
+        }
+        return sum;
+      }
+
+      partScores.part1 = sumPart("p1", 5);
+      partScores.part2 = sumPart("p2", 5);
+      partScores.part3 = sumPart("p3", 5);
+      partScores.part4 = sumPart("p4", 5);
+      totalScore = partScores.part1 + partScores.part2 + partScores.part3 + partScores.part4;
+
+      document.getElementById("part1Score").textContent = "Integrity Score: " + partScores.part1 + " / 25";
+      document.getElementById("part2Score").textContent = "Intent Score: " + partScores.part2 + " / 25";
+      document.getElementById("part3Score").textContent = "Capabilities Score: " + partScores.part3 + " / 25";
+      document.getElementById("part4Score").textContent = "Results Score: " + partScores.part4 + " / 25";
+      document.getElementById("totalScore").textContent = "Total Score: " + totalScore + " / 100";
+    });
+  </script>
+</body>
+</html>
